@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), 'README.md'))\build\common.props" />
+  <Import Project="ilmerge.props" />
+
+  <ItemGroup>
+    <PackageReference Version="1.0.0" Include="Microsoft.Build.Utilities.v4.0" />
+    <PackageReference Version="2.0.0" Include="Microsoft.CSharp" />
+    <PackageReference Version="3.0.0" Include="System" />
+    <PackageReference Version="4.0.0" Include="System.ComponentModel.Composition" />
+    <PackageReference Version="5.0.0" Include="System.ComponentModel.Composition.Registration" />
+    <Reference Include="NuGet.Core">
+      <HintPath>$(SolutionPackagesFolder)NuGet.Core.2.14.0-rtm-832\lib\net40-Client\NuGet.Core.dll</HintPath>
+      <Aliases>CoreV2</Aliases>
+    </Reference>
+
+
+    <PackageReference Include="DotNetNuke.Core" Version="9.0.1.142" />
+    <PackageReference Include="DotNetZip" Version="1.10.1" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="4.4.1" />
+    <PackageReference Include="YamlDotNet" Version="4.3.2" />
+    <PackageReference Include="recurly-api-client" Version="1.0.0" />
+
+  </ItemGroup>
+</Project>
